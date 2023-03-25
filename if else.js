@@ -1,15 +1,28 @@
-function leapYear(year)
+function testElseIf(val)
 {
-    if(year%4==0)
-    return true;
+    if(val>10)
+    return "Greater than  10";
+    else if(val<5)
+    return "Smaller than 5";
     else
-    return false;
+    return "Between 5 and 10";
 }
-if(leapYear(2000))
+console.log(testElseIf(8));
+console.log(testElseIf(3));
+
+
+function testSize(num)
 {
-    console.log("Leap year");
+    if(num<5)
+    return "tiny";
+    else if(num<10)
+    return "small";
+    else if(num<15)
+    return "medium";
+    else if(num<20)
+    return "large";
+    else
+    return "huge";
 }
-else
-{
-    console.log("Not a leap year");
-}
+console.log(testSize(20));
+ console.log(testSize(13));
